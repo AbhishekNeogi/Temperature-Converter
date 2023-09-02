@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@600&family=Roboto:wght@100&display=swap" rel="stylesheet"><title>Temperature Converter</title>
+    <script>
+        const convertTemp =()=>{
+            let cel = Number(document.getElementById('celsius').value)
+            farh = ((9/5)*cel + 32).toFixed(2)
+            document.getElementById('farhenite').innerHTML = farh
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+    <h1 class="title">Temperature Converter</h1>
+    <div class="container"> 
+        <!-- <h3 class="box"><input type="number" required id="celsius" class="temp" onchange="convertTemp()">  &#176 Celcius </h3> -->
+        <h3 class="box"><input type="number" required id="celsius" class="temp" onchange="convertTemp()">  &#176 C </h3>
+    </div>
+    <div class="container2">
+        <!-- <h3 class="box2"><span id="farhenite" class="farhValue"></span> &#176 Farhenite</h3> -->
+        <h3 class="box2"><span id="farhenite" class="farhValue"></span> &#176 F</h3>
+    </div>
+</div>
+</body>
+</html>
